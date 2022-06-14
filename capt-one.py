@@ -5,12 +5,8 @@ fps = 30
 size = (int(cameraCapture.get(cv2.CAP_PROP_FRAME_WIDTH)),
         int(cameraCapture.get(cv2.CAP_PROP_FRAME_HEIGHT)))
 
-videoWriter1 = cv2.VideoWriter(
-            'MyOutputVid_YUV.avi', cv2.VideoWriter_fourcc('I','4','2','0'),
-            fps, size)
-
 videoWriter2 = cv2.VideoWriter(
-            'MyOutputVid_MPEG-1.avi', cv2.VideoWriter_fourcc('P','I','M','1'),
+            'MyOutputVid_MPEG-1.mpg', cv2.VideoWriter_fourcc('P','I','M','1'),
             fps, size)
 
 
