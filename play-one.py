@@ -4,8 +4,7 @@ import numpy as np
    
 # Create a VideoCapture object and read from input file
 
-vid = 'MyOutputVid_YUV.avi'
-# MyOutputVid_MPEG-1.avi
+vid = 'MyOutputVid_MPEG-1.mpeg'
 
 cap = cv2.VideoCapture(vid)
    

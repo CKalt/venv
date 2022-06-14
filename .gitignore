@@ -1,5 +1,8 @@
 /__pycache__
 /tutorial-env
+/pcv
 *.avi
 *.mp4
+*.mpeg
 *.png
+*.so
