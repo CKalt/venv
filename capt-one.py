@@ -1,14 +1,19 @@
-import cv2
+import cv2 as cv
 
-cameraCapture = cv2.VideoCapture(0)
+cameraCapture = cv.VideoCapture(0)
 fps = 30 
-size = (int(cameraCapture.get(cv2.CAP_PROP_FRAME_WIDTH)),
-        int(cameraCapture.get(cv2.CAP_PROP_FRAME_HEIGHT)))
+size = (int(cameraCapture.get(cv.CAP_PROP_FRAME_WIDTH)),
+        int(cameraCapture.get(cv.CAP_PROP_FRAME_HEIGHT)))
 
-videoWriter = cv2.VideoWriter(
-            'MyOutputVid_MPEG-1.mpg', cv2.VideoWriter_fourcc('P','I','M','1'),
-            fps, size)
+output_file_name = 'MyOutputVid_264_MPEG-4.avi'
 
+# 264 MPEG-4
+fourcc = cv.VideoWriter_fourcc(*'XVID')
+
+videoWriter = cv.VideoWriter(
+             output_file_name,
+             fourcc,
+             fps, size)
 
 success, frame = cameraCapture.read()
 numFramesRemaining = 10 *fps - 1

@@ -4,7 +4,7 @@ import numpy as np
    
 # Create a VideoCapture object and read from input file
 
-vid = 'MyOutputVid_MPEG-1.mpeg'
+vid = 'MyOutputVid_264_MPEG-4.avi'
 
 cap = cv2.VideoCapture(vid)
    
