@@ -1,12 +1,12 @@
 # importing libraries
-import cv2
+import cv2 as cv
 import numpy as np
    
 # Create a VideoCapture object and read from input file
 
 vid = 'MyOutputVid_264_MPEG-4.avi'
 
-cap = cv2.VideoCapture(vid)
+cap = cv.VideoCapture(vid)
    
 # Check if camera opened successfully
 if (cap.isOpened()== False): 
@@ -20,10 +20,10 @@ while(cap.isOpened()):
   if ret == True:
    
     # Display the resulting frame
-    cv2.imshow('Frame', frame)
+    cv.imshow('Frame', frame)
    
     # Press Q on keyboard to  exit
-    if cv2.waitKey(25) & 0xFF == ord('q'):
+    if cv.waitKey(25) & 0xFF == ord('q'):
       break
    
   # Break the loop
@@ -35,4 +35,4 @@ while(cap.isOpened()):
 cap.release()
    
 # Closes all the frames
-cv2.destroyAllWindows()
+cv.destroyAllWindows()
