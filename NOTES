@@ -1,5 +1,16 @@
 pip install Flask
+    17/07/22 18:41:51 python3 -m pip install --user virtualenv
     23/06/22 11:37:50 . ./activate 
     23/06/22 11:37:57 pip install Flask
     23/06/22 11:38:28 /home/chris/projects/python/venv/tutorial-env/bin/python -m pip install --upgrade pip
-
+    18/07/22 10:05:45 pip install numpy
+    18/07/22 10:08:27 pip install opencv-python
+    18/07/22 10:09:51 python -m pip install scipy matplotlib ipython jupyter pandas sympy nose
+    18/07/22 10:11:52 python -m pip install scipy
+    18/07/22 10:12:05 pip install imutils
+    18/07/22 10:12:29 pip install wheel
+    18/07/22 10:12:41 pip install opencv-contrib-python
+    18/07/22 10:13:02 pip install pgi
+    18/07/22 10:13:24 pip install PyGObject    ############# <tossed error>
+    18/07/22 10:14:17 pip install -U vidgear[core]
+    18/07/22 10:14:34 pip install python-socketio
