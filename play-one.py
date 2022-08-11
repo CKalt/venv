@@ -1,10 +1,16 @@
 # importing libraries
 import cv2 as cv
 import numpy as np
+import argparse
+
+# construct the argument parser and parse the arguments
+ap = argparse.ArgumentParser()
+ap.add_argument("-v", "--video", type=str, default="video.mp4",
+    help="path to the input video")
+args = vars(ap.parse_args())
    
 # Create a VideoCapture object and read from input file
-
-vid = 'MyOutputVid_264_MPEG-4.avi'
+vid = args["video"]
 
 cap = cv.VideoCapture(vid)
    
